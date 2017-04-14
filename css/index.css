@@ -1,0 +1,140 @@
+@charset "utf-8";
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/os_loginBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+body > div{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mask {
+	z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.headPortrait {
+	width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 16px rgba(255, 255, 255,0.6);
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 100px);
+    background-image: url(../img/headPortrait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.userName {
+    font: 52px/66px "微软雅黑";
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.pwdBox {
+	width: 300px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 150px);
+    box-sizing: border-box;
+    border: 3px solid rgba(188, 188, 188, 0.3);
+}
+.pwdBox:hover {
+	border: 3px solid rgba(255, 255, 255, 0.6);
+}
+.pwdBox input{
+	width: calc(100% - 36px);
+    height: 100%;
+    text-indent: 1em;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 0;
+    float: left;
+    outline: none;
+}
+.pwdBox button{
+	width: 36px;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #fff;
+    border: 0;
+    background-color: rgb(188,188,188);
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+.loginBad {
+	width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 150px);
+    box-sizing: border-box;
+    text-align: center;
+    display: none;
+}
+.loginBad span{
+	display: block;
+    width: 100%;
+    font: 16px "微软雅黑";
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.okBtn {
+	width: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    font: 18px "微软雅黑";
+    color: #fff;
+    background-color: rgb(116, 116, 116);
+    border: 3px solid rgba(188, 188, 188, 0.6);
+}
+.okBtn:active {
+	border: 3px solid rgba(255,255,255, 0.6);
+}
+
+.loginBox {
+	z-index: 11;
+}
+.dateBox {
+	width: 600px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.time {
+    display: block;
+	width: 100%;
+    font: bold 130px Tahoma,Helvetica,Arial,'宋体',sans-serif;
+}
+.date {
+	display: block;
+    width: 100%;
+    font: bold 60px Tahoma,Helvetica,Arial,'宋体',sans-serif;
+}
